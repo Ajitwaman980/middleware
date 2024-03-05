@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .thumbnail img {
+        width: 10rem;
+        height: 6rem;
+        border-radius: 50%;
+        object-fit: fill;
+      }
+      .info p {
+        font: 2rem;
+        padding-left: 2rem;
+        font-family: serif;
+        color: black;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Admin</h1>
+    <div class="thumbnail">
+      <h3>Profile</h3>
+      <h1><strong>Username:</strong> <%= data.username %></h1>
+      <img src="<%= data.image %>" alt="" />
+    </div>
+    <div class="info">
+      <p><strong>firstName:</strong> <%= data.firstName %></p>
+      <p><strong>lastName:</strong> <%= data.lastName %></p>
+      <p><strong>maidenName:</strong> <%= data.maidenName %></p>
+      <p><strong>Account Number:</strong> <%= data.bank.cardNumber %></p>
+      <p><strong>email:</strong> <%= data.email %></p>
+      <p><strong>age:</strong> <%= data.age %></p>
+      <p><strong>gender:</strong> <%= data.gender %></p>
+
+      <p><strong>phone:</strong> <%= data.phone %></p>
+      <p><strong>birthDate:</strong> <%= data.birthDate %></p>
+      <p><strong>height:</strong> <%= data.height %></p>
+      <p><strong>weight:</strong> <%= data.weight %></p>
+      <p><strong>eyeColor:</strong> <%= data.eyeColor %></p>
+      <p><strong>address:</strong> <%= data.address.city %></p>
+      <p><strong>macAddress:</strong> <%= data.macAddress %></p>
+      <p><strong>university:</strong> <%= data.university %></p>
+    </div>
+  </body>
+</html>
